@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.hero-img {
+  padding: 1.5rem;
+  margin-bottom: 4.5rem;
+}
+.hero-img img {
+  height: 10.5rem;
+}
+
+.auth-card {
+  /* flex: 9; */
+  display: flex;
+  align-items: center;
+  column-gap: 3.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 60%;
+  border-radius: 1.5rem;
+  padding: 7.5rem;
+  margin-bottom: 1.5rem;
+}
+.auth-card-img {
+  flex: 3;
+  display: flex;
+}
+.auth-card-img img {
+  height: 100%;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 2.5rem;
+}
+h2 > span {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-style: italic;
+  text-decoration: underline;
+}
+.auth-card-details {
+  flex: 5;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.card-info label {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  color: #444;
+}
+.card-info input {
+  border: 2px solid #b8b6b6;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+.card-info input:focus {
+  outline: none;
+  border: 2px solid #e39836;
+  transition: all 0.5s;
+}
+.btn-login {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #adadad;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-active {
+  background-color: #e2ae6a;
+}
+.btn-active:hover {
+  background-color: #e39836;
+  transition: all 1s;
+}
+
+/* Media query */
+/* Tablet */
+@media (max-width: 768px) {
+  .hero-img {
+    margin-bottom: 5.5rem;
+  }
+  .hero-img img {
+    height: 7.5rem;
+  }
+  .auth-card {
+    width: 95%;
+    padding: 7.5rem 2.5rem;
+  }
+  .auth-card-img {
+    width: 40%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-img {
+    margin-bottom: 5.5rem;
+  }
+  .hero-img img {
+    height: 5.5rem;
+  }
+  .auth-card {
+    width: 90%;
+    padding: 7.5rem 3.5rem;
+  }
+  .auth-card-img {
+    display: none;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
