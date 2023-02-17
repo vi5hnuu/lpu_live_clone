@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  border-radius: 2.5rem;
+  width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+  border-radius: 2.5rem;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2.5rem;
+  background-color: #f06f06;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "Titillium Web", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.users-groups-container {
+  background-color: #a57ac2;
+  flex: 3;
+
+  display: flex;
+  flex-direction: column;
+}
+.users-groups-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 1px solid #b7b5b5;
+}
+.logo_box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.logo_box img {
+  width: 15%;
+}
+.logo_box h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.utility_box {
+  display: flex;
+  gap: 0.5rem;
+}
+.utility_box img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+.chat_container {
+  background-color: greenyellow;
+  flex: 8;
+
+  display: flex;
+  flex-direction: column;
+}
+/* Search */
+.search_box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.search_box > input {
+  border: 1px solid #fff;
+  flex: 1;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.search_box > input:focus {
+  outline: 2px solid #e4d2f0;
+  transition: all 0.2s;
+}
+.search_box > img {
+  width: 7%;
+}
+/* users-groups section */
+.users-groups {
+  overflow-y: scroll;
+  flex: 1;
+}
+.tile {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  margin: 0.5rem 0.5rem;
+  padding: 0.75rem;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #dfbaf1;
+}
+.icon {
+  border: 2px solid #f1830d;
+}
+.tile:hover {
+  transform: scale(1.02);
+  transition: all 1s;
+}
+.tile img {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+.title_box {
+  flex: 1;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1830d;
+  padding: 1rem;
+  clip-path: circle(30%);
+}
+
+/* ////////////////////////// */
+
+.chat-header {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.more-info > img {
+  width: 2.5rem;
+}
+
+.chat-title .title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.chat-title .member-count {
+  color: #a19f9f;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.chats_box {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9e9ea;
+  flex: 1;
+  overflow-y: scroll;
+}
+.chats_box ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+.when {
+  display: inline-block;
+  padding: 0.7rem 2.5rem;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgba(219, 222, 219, 0.89);
+  background-color: #d07540;
+  justify-self: center;
+  align-self: center;
+}
+.message-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1.5rem;
+}
+.user-info {
+  display: inline-block;
+  color: #f06f06;
+  font-size: 1.5rem;
+}
+.message {
+  display: inline-block;
+  max-width: 60%;
+  background-color: #f06f06;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+}
+.receiver {
+  align-items: flex-end;
+}
+.receiver .message {
+  border-radius: 10px;
+  border-top-right-radius: 0;
+}
+.send-msg-container {
+  background-color: #f9e9ea;
+  padding: 1rem;
+}
+.send-msg-box {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  gap: 1.5rem;
+  background-color: #fff;
+  border-radius: 2.5rem;
+  padding: 1rem 1.5rem;
+}
+.send-msg-box > input {
+  flex: 1;
+  border: 1px solid #d7d2d2;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+}
+.send-msg-box > input:focus {
+  flex: 1;
+  outline: 2px solid #f06f06;
+}
+.send-msg-box button {
+  background: none;
+  border: none;
+}
+.send-msg-box img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+/* TODO : RESPONSIVENESS */
